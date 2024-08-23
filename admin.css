@@ -1,0 +1,161 @@
+.career-quest-rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15vw; /* Width of the rectangle */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #303c6c; /* Background color of the rectangle */
+    color: aliceblue; /* Text color */
+    padding: 20px; /* Padding inside the rectangle */
+    box-sizing: border-box;
+}
+
+.career-quest-title {
+    margin: 0;
+    font-size: 2em; /* Font size for the heading */
+}
+
+.divider {
+    margin: 20px 0;
+    border: 0;
+    border-top: 2px solid aliceblue; /* Thin horizontal line */
+}
+
+.menu-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin-bottom: 40px; /* Space between links */
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: aliceblue; /* Link color */
+    font-size: 1.5em; /* Font size for links */
+    transition: #303C6C 0.5s ease-in-out; /* Smooth transition on hover */
+}
+
+.menu-list a:hover {
+    color: #ffcc00; /* Lighter color on hover */
+}
+
+
+.small-rectangles-container {
+    display: flex;
+    gap: 20px; /* Space between rectangles */
+    width: calc(100% - 15vw); /* Adjust based on menu bar width */
+    padding-left: 32vh;
+    margin-top: 25px;
+}
+
+.small-rectangle {
+    width: calc((100% - 3 * 20px) / 4); /* 4 rectangles with spacing */
+    background-color: #a9974c; /* Background color */
+    color: black; /* Text color */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center align text */
+}
+
+.small-rectangle h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+}
+
+.random-number {
+    font-size: 2em;
+    margin: 0;
+}
+.bar-graph-rectangle {
+    width: 50vw;
+    height: 500px;
+    margin-left: 35vh;
+    background-color: #303c6c; /* Background color */
+    color: aliceblue; /* Text color */
+    padding: 20px 0;
+    left: 0;
+    box-sizing: border-box;
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 50px; /* Space above the rectangle */
+}
+
+.bar-graph-rectangle h3 {
+    margin: 0 0 20px 0;
+    font-size: 1.8em;
+    text-align: center; /* Center align the title */
+}
+
+canvas {
+    height: 85%;
+    width: 100%;
+    display: block; /* Ensure canvas takes up space */
+    margin-top: 40px;
+}
+
+.mentor-performance-rectangle {
+    width: 28vw; /* Adjust width based on the menu bar */
+    background-color: #303c6c; /* Background color */
+    color: aliceblue; /* Text color */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px; /* Rounded corners */
+    margin: 50px 0 20px auto; /* Space above and below the rectangle */
+    position: relative; /* Position relative for internal adjustments */
+    margin-top: -68vh;
+    margin-left: 145vh;
+}
+
+.mentor-performance-rectangle h3 {
+    margin: 0 0 20px 0;
+    font-size: 1.5em;
+    text-align: center; /* Center align the title */
+}
+
+.mentor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between smaller rectangles */
+    flex-wrap: wrap; /* Allows wrapping if needed */
+}
+
+.mentor-item {
+    display: flex;
+    align-items: center;
+    background-color: #404a7a; /* Background color for each mentor item */
+    width: 90%;
+    margin: 0 ;
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    width: 400px; /* Fixed width for each item */
+    box-sizing: border-box;
+    /* margin-left: 50vh; */
+}
+
+.mentor-image-container {
+    flex-shrink: 0;
+    margin-right: 15px; /* Space between image and details */
+}
+
+.mentor-image {
+    width: 60px; /* Diameter of the circular image */
+    height: 60px;
+    border-radius: 50%; /* Circular image */
+}
+
+.mentor-details {
+    flex: 1;
+}
+
+.mentor-name {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+}
+
+.mentor-rating {
+    font-size: 1.5em;
+    margin: 0;
+}

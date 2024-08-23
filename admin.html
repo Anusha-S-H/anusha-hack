@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./admin.css">
+    <!-- Include Chart.js library for dynamic bar graph -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="career-quest-rectangle">
+        <h2 class="career-quest-title">Career Quest</h2>
+        <hr class="divider">
+        <ul class="menu-list">
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+            <li><a href="#messages">Messages</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#appointment-management">Appointment Management</a></li>
+            <li><a href="#help-center">Help & Center</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Four small rectangles -->
+    <div class="small-rectangles-container">
+        <div class="small-rectangle">
+            <h4>Enrolled Students</h4>
+            <p class="random-number">1,20,000+</p>
+        </div>
+        <div class="small-rectangle">
+            <h4>Total Mentors</h4>
+            <p class="random-number">500+</p>
+        </div>
+        <div class="small-rectangle">
+            <h4>Courses Offered</h4>
+            <p class="random-number">3000+</p>
+        </div>
+        <div class="small-rectangle">
+            <h4>Feedback</h4>
+            <p class="random-number">78k+</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+ <!-- Bar Graph Rectangle -->
+ <div class="bar-graph-rectangle">
+    <h3>Income/Expenses Report</h3>
+    <canvas id="barChart" width="400" height="200"></canvas>
+</div>
+</div>
+
+<script>
+// Chart.js script to create the bar graph
+const ctx = document.getElementById('barChart').getContext('2d');
+const barChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May'], // Example months
+        datasets: [{
+            label: 'Income',
+            data: [5000, 6000, 7000, 8000, 9000], // Example income data
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1
+        }, {
+            label: 'Expenses',
+            data: [3000, 3500, 4000, 4500, 5000], // Example expenses data
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+
+
+ <!-- Mentor Performance Rectangle -->
+ <div class="mentor-performance-rectangle">
+    <h3>Mentor Performance</h3>
+    <div class="mentor-list">
+        <div class="mentor-item">
+            <div class="mentor-image-container">
+                <img src="./pp3.png" alt="Mentor 1" class="mentor-image">
+            </div>
+            <div class="mentor-details">
+                <p class="mentor-name">John Doe</p>
+                <p class="mentor-rating">⭐⭐⭐⭐⭐</p> <!-- Star rating -->
+            </div>
+        </div>
+        <div class="mentor-item">
+            <div class="mentor-image-container">
+                <img src="./pp.png" alt="Mentor 2" class="mentor-image">
+            </div>
+            <div class="mentor-details">
+                <p class="mentor-name">Jane Smith</p>
+                <p class="mentor-rating">⭐⭐⭐⭐⭐</p> <!-- Star rating -->
+            </div>
+        </div>
+        <div class="mentor-item">
+            <div class="mentor-image-container">
+                <img src="./pp2.png" alt="Mentor 3" class="mentor-image">
+            </div>
+            <div class="mentor-details">
+                <p class="mentor-name">Emily Johnson</p>
+                <p class="mentor-rating">⭐⭐⭐⭐⭐</p> <!-- Star rating -->
+            </div>
+        </div>
+         <!-- New Mentor Added -->
+         <div class="mentor-item">
+            <div class="mentor-image-container">
+                <img src="./girl avatar.avif" alt="Mentor 4" class="mentor-image">
+            </div>
+            <div class="mentor-details">
+                <p class="mentor-name">Michael Brown</p>
+                <p class="mentor-rating">⭐⭐⭐⭐⭐</p> <!-- Star rating -->
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</body>
+</html>

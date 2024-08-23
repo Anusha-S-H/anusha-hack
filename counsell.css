@@ -1,0 +1,323 @@
+.career-quest-rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15vw; /* Width of the rectangle */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #303c6c; /* Background color of the rectangle */
+    color: aliceblue; /* Text color */
+    padding: 20px; /* Padding inside the rectangle */
+    box-sizing: border-box;
+}
+
+.career-quest-title {
+    margin: 0;
+    font-size: 2em; /* Font size for the heading */
+}
+
+.divider {
+    margin: 20px 0;
+    border: 0;
+    border-top: 2px solid aliceblue; /* Thin horizontal line */
+}
+
+.menu-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin-bottom: 40px; /* Space between links */
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: aliceblue; /* Link color */
+    font-size: 1.5em; /* Font size for links */
+    transition: #303C6C 0.5s ease-in-out; /* Smooth transition on hover */
+}
+
+.menu-list a:hover {
+    color: #ffcc00; /* Lighter color on hover */
+}
+
+
+
+.rectangle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    padding-left: 240px; /* Adjust based on the width of your menu bar */
+    box-sizing: border-box;
+}
+
+.progress-rectangle {
+    width: calc(50% - 30px); /* Adjust to fit two rectangles per row */
+    background-color: #303c6c; /* Background color */
+    color: aliceblue; /* Text color */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between rows */
+    position: relative;
+}
+
+.progress-rectangle h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.progress-number-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px; /* Space between the number and the progress bar */
+}
+
+.progress-number {
+    font-size: 1.5em;
+    color: aliceblue; /* Color of the numbers */
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #555; /* Background color for the progress bar */
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px; /* Height of the progress bar */
+}
+
+.progress {
+    height: 100%;
+    background-color: #ffcc00; /* Progress color */
+    width: 70%; /* Example progress percentage */
+    transition: width 0.5s ease-in-out; /* Smooth transition */
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
+}
+
+/* Specific progress bars (adjust widths as needed) */
+.counselled {
+    width: 80%; /* Adjust percentage */
+}
+
+.upcoming {
+    width: 60%; /* Adjust percentage */
+}
+
+.enrolled {
+    width: 75%; /* Adjust percentage */
+}
+
+.performance {
+    width: 50%; /* Adjust percentage */
+}
+
+
+
+.rectangle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    padding-left: 250px; /* Adjust based on the width of your menu bar */
+    box-sizing: border-box;
+}
+
+.progress-rectangle-counselled,
+.progress-rectangle-upcoming,
+.progress-rectangle-enrolled,
+.progress-rectangle-performance {
+    width: calc(50% - 30px); /* Adjust to fit two rectangles per row */
+    background-color: #303c6c; /* Background color */
+    color: aliceblue; /* Text color */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between rows */
+    position: relative;
+}
+
+.progress-rectangle-counselled h3,
+.progress-rectangle-upcoming h3,
+.progress-rectangle-enrolled h3,
+.progress-rectangle-performance h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.progress-number-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px; /* Space between the number and the progress bar */
+}
+
+.progress-number {
+    font-size: 1.5em;
+    color: #ffcc00; /* Color of the numbers */
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #555; /* Background color for the progress bar */
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px; /* Height of the progress bar */
+}
+
+.progress {
+    height: 100%;
+    background-color: #ffcc00; /* Progress color */
+    width: 70%; /* Example progress percentage */
+    transition: width 0.5s ease-in-out; /* Smooth transition */
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
+}
+
+/* Specific progress bars (adjust widths as needed) */
+.progress-counselled {
+    width: 80%; /* Adjust percentage */
+}
+
+.progress-upcoming {
+    width: 60%; /* Adjust percentage */
+}
+
+.progress-enrolled {
+    width: 75%; /* Adjust percentage */
+}
+
+.progress-performance {
+    width: 50%; /* Adjust percentage */
+}
+
+/* New student list rectangle */
+.student-list-rectangle {
+    width: 50%; /* Full width of the container */
+    background-color: #303c6c; /* Background color */
+    color: aliceblue; /* Text color */
+    padding: 20px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    margin-left: 250px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.student-list-rectangle h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+}
+
+.student-list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.student-list-table th,
+.student-list-table td {
+    border: 1px solid #555; /* Border color */
+    padding: 8px;
+    text-align: left;
+}
+
+.student-list-table th {
+    background-color: #404a7a; /* Header background color */
+    color: aliceblue; /* Header text color */
+}
+
+.student-list-table tr:nth-child(even) {
+    background-color: #3c4a75; /* Zebra striping for rows */
+}
+
+.student-list-table tr:nth-child(odd) {
+    background-color: #303c6c; /* Row color */
+}
+
+.student-list-table td {
+    color: #e0e0e0; /* Text color */
+}
+
+
+
+
+/* New appointment booking rectangle */
+.appointment-booking-rectangle {
+    width: 30%; /* Full width of the container */
+    background-color: #303c6c; /* Background color */
+    color: aliceblue; /* Text color */
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 8px; /* Rounded corners */
+    position: absolute;
+    right: 20px;
+    top: 50vh;
+}
+
+.appointment-booking-rectangle h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.5em;
+}
+
+.appointment-item {
+    display: flex;
+    align-items: center;
+    background-color: #404a7a; /* Background color for each appointment item */
+    padding: 6px;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between items */
+}
+
+.appointment-image-container {
+    flex-shrink: 0;
+    margin-right: 50px; /* Space between image and details */
+}
+
+.appointment-image {
+    width: 80px; /* Diameter of the circular image */
+    height: 80px;
+    border-radius: 50%; /* Circular image */
+}
+
+.appointment-details {
+    flex: 1;
+}
+
+.appointment-name {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+}
+
+.appointment-buttons {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+.btn-accept,
+.btn-deny {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for button color */
+}
+
+.btn-accept {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+}
+
+.btn-accept:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.btn-deny {
+    background-color: #f44336; /* Red background */
+    color: white;
+}
+
+.btn-deny:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
